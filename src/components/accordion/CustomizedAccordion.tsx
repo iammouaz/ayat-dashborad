@@ -57,7 +57,7 @@ const CustomizedAccordion: FunctionComponent<CustomizedAccordionProps> = ({
             </Flex>
             <AccordionPanel p={0}>
               <Accordion p={0} bgColor='#f5f9ff' allowToggle>
-                {item.items.map((nestedItem, index) => (
+                {item.items.map((nestedItem) => (
                   <AccordionItem key={`inner-accordion-${item.id}-${nestedItem.id}`}>
                   {() => (
                       <>
