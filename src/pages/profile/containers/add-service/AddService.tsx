@@ -36,7 +36,7 @@ const AddService: React.FunctionComponent<AddServiceProps> = () => {
             placeholder='Add New Services'
           />
         </InputGroup>
-        <Image pr="100px" src={closeIcon} />
+        <Image pr='100px' src={closeIcon} />
         <Box
           position='absolute'
           right='-32px'
