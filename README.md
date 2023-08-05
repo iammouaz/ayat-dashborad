@@ -1,27 +1,68 @@
-# React + TypeScript + Vite
+# DOMECARE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Live Demo
+you can check out website [here](https://peppy-horse-20d825.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Vite
+- Typescript
+- React
+- Chakra UI
+- React Query
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Getting Started
+Before we start, make sure you fit the prerequisites, the source code is inside the folder SRC/
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Prerequisites
+- npm installed
+- VSCode
+- React-based on components
+
+### Setup
+- https://github.com/iammouaz/ayat-dashborad.git
+
+### Install
+- `yarn` or `npm i`
+### Usage
+- `npm start` from VSCode
+
+### Deployment
+- `yarn build` or `npm run build`
+
+### Run Prettier formatter
+- `yarn format` or `npm run format`
+
+### Enviroment Variables
+- There are two Variables we are using in the project
+`VITE_API_BASE_URL` = Base API link
+`VITE_API_SECRET_KEY` = Your Secret key for encrypting the data
+
+***You can also found them in .env file***
+
+
+## Authors
+
+👤 **Moaz El Molkey**
+
+- GitHub: [@iammouaz](https://github.com/iammouaz)
+- Twitter: [@MoazMulki1](https://twitter.com/MoazMulki1)
+- LinkedIn: [Mouaz El Molkey](https://www.linkedin.com/in/mohammad-mouaz-molki-1368981bb/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
