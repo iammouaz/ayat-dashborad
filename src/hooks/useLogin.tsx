@@ -32,7 +32,7 @@ export const useLogin = () => {
         const encryptedAuthToken = AES.encrypt(authToken, secretKey).toString()
         Cookies.set('token', encryptedAuthToken)
         setAuthToken(encryptedAuthToken)
-        navigate('/')
+        navigate('/home/profile/services')
       }
     },
     onError: (error) => {

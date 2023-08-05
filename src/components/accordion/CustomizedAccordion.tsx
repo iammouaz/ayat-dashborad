@@ -32,7 +32,7 @@ const CustomizedAccordion: FunctionComponent<CustomizedAccordionProps> = ({ item
               <Flex w='full' justifyContent='space-between' alignItems='center'>
                 <Flex alignItems='center' gap='5px'>
                   {isExpanded ? <ChevronUpIcon color='primary' /> : <ChevronDownIcon />}
-                  <Text fontSize="14px" py='2' ml='2'>
+                  <Text fontSize='14px' py='2' ml='2'>
                     {item.title}
                   </Text>
                 </Flex>
@@ -51,7 +51,7 @@ const CustomizedAccordion: FunctionComponent<CustomizedAccordionProps> = ({ item
                         <AccordionButton borderLeft='8px solid #c3daff'>
                           <Flex w='full' justifyContent='space-between' alignItems='center'>
                             <Flex alignItems='center' gap='5px'>
-                              <Text fontSize="14px" py='2' ml='2'>
+                              <Text fontSize='14px' py='2' ml='2'>
                                 {nestedItem.title}
                               </Text>
                             </Flex>
@@ -65,7 +65,7 @@ const CustomizedAccordion: FunctionComponent<CustomizedAccordionProps> = ({ item
                           <Flex gap='10px' flexDirection='column' justifyContent='center'>
                             {nestedItem.items.map((item, index) => (
                               <Text
-                              fontSize="14px"
+                                fontSize='14px'
                                 key={`nested-item-2-${index}`}
                                 px='16px'
                                 py='10px'

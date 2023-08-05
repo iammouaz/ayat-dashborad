@@ -5,6 +5,7 @@ import ProtectedRoute from './ProtectedRoute'
 import AlreadyLoggedinRedirect from './AlreadyLoggedIn'
 import Profile from 'pages/profile/Profile'
 import Services from 'pages/profile/containers/services/Services'
+import AddService from 'pages/profile/containers/add-service/AddService'
 
 interface AppRoutesProps {}
 
@@ -28,11 +29,21 @@ const AppRoutes: React.FunctionComponent<AppRoutesProps> = () => {
             </ProtectedRoute>
           }
         >
-          <Route path='services' element={<Services />} />
+          <Route path='services' element={<Services />}>
+            <Route path='Add-New-Service' element={<AddService />} />
+          </Route>
           <Route path='user' element={<></>} />
           <Route path='hospitals' element={<></>} />
           <Route path='order' element={<></>} />
         </Route>
+        <Route
+          path='/*'
+          element={
+            <AlreadyLoggedinRedirect>
+              <Login />
+            </AlreadyLoggedinRedirect>
+          }
+        />
       </Routes>
     </BrowserRouter>
   )

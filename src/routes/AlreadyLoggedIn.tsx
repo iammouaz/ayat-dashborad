@@ -5,7 +5,7 @@ function AlreadyLoggedinRedirect({ children }: any) {
   const token = Cookies.get('token')
 
   if (token) {
-    return <Navigate to='/' replace state={{ alreadyLoggedin: true }} />
+    return <Navigate to='/home/profile/services' replace state={{ alreadyLoggedin: true }} />
   }
 
   return children

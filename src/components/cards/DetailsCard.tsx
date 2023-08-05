@@ -47,7 +47,7 @@ const DetailsCard: FunctionComponent<DetailsCardProps> = ({
           bg='primary'
           borderLeftRadius='20px'
         >
-          <Image w="24px" src={cameraIcon} alt='edit' />
+          <Image w='24px' src={cameraIcon} alt='edit' />
         </Box>
       </Box>
 
@@ -81,23 +81,23 @@ const DetailsCard: FunctionComponent<DetailsCardProps> = ({
       <Box px={4} pb={4} display='flex' flexDirection='column' gap='20px'>
         <Flex alignItems='center' gap='30px'>
           <Image src={phoneIcon} />
-          <Text fontWeight="800">{phone}</Text>
+          <Text fontWeight='800'>{phone}</Text>
         </Flex>
         <Flex alignItems='center' gap='30px'>
           <Image src={websiteIcon} />
-          <Text fontWeight="800">{website}</Text>
+          <Text fontWeight='800'>{website}</Text>
         </Flex>
         <Flex alignItems='center' gap='30px'>
           <Image src={facebookIcon} />
-          <Text fontWeight="800">{facebook}</Text>
+          <Text fontWeight='800'>{facebook}</Text>
         </Flex>
         <Flex alignItems='center' gap='30px'>
           <Image src={instagramIcon} />
-          <Text fontWeight="800">{intagram}</Text>
+          <Text fontWeight='800'>{intagram}</Text>
         </Flex>
         <Flex alignItems='center' gap='30px'>
           <Image src={linkedInIcon} />
-          <Text fontWeight="800">{twitter}</Text>
+          <Text fontWeight='800'>{twitter}</Text>
         </Flex>
       </Box>
     </Flex>

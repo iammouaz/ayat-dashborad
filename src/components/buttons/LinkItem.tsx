@@ -17,7 +17,7 @@ const LinkItem: React.FunctionComponent<LinkItemProps> = ({ icon, link, title })
             content: '""',
             position: 'absolute',
             top: '0',
-            right: '-50',
+            right: '-35',
             width: isActive ? '50px' : '0px',
             height: '100%',
             bgColor: 'secondary',

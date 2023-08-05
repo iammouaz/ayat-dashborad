@@ -23,6 +23,7 @@ const Titlewithborder: FunctionComponent<TitlewithborderProps> = ({
         h='5px'
         bgColor={broderColor || 'primary'}
         borderRadius='8px'
+        opacity={1}
       />
     </>
   )

@@ -15,7 +15,14 @@ interface SidebarProps {}
 
 const Sidebar: FunctionComponent<SidebarProps> = () => {
   return (
-    <Box minH="100vh" boxShadow='lg' bg='white' borderRadius='20px' py='6' px='8'>
+    <Box
+      minH='100vh'
+      boxShadow='lg'
+      bg='white'
+      borderRadius='20px'
+      py={{ base: 2, lg: 4, xl: 6 }}
+      px={{ base: 2, lg: '4', xl: '8' }}
+    >
       <Flex alignItems='center' gap='10px'>
         <Avatar w='2.5rem' h='2.5rem' src={avatarImg} />
         <Text fontWeight='bold'>User Name</Text>
