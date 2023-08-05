@@ -3,7 +3,7 @@ import { useMutation } from '@tanstack/react-query'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { useToast } from '@chakra-ui/react'
 import { AES } from 'crypto-js'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Cookies from 'js-cookie'
 import * as yup from 'yup'
 import { TLoginInputs } from 'models/auth/login.types'
@@ -21,7 +21,6 @@ export const loginSchema = yup
 export const useLogin = () => {
   const { loginApi } = useApiRequests()
   const { setAuthToken } = useAxiosInstance()
-  const location = useLocation()
   const navigate = useNavigate()
 
   const { mutate, isLoading } = useMutation({

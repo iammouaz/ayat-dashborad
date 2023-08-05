@@ -1,4 +1,4 @@
-import { Box, FormControl, Image, Stack, Text } from '@chakra-ui/react'
+import { Box, Image, Stack, Text } from '@chakra-ui/react'
 import hero from 'assets/imgs/login-hero.png'
 import logo from 'assets/imgs/Logo.png'
 import LoginForm from './components/LoginForm'
@@ -15,8 +15,9 @@ const Login: React.FunctionComponent<LoginProps> = () => {
           backgroundSize='cover'
           backgroundPosition='center'
           backgroundRepeat='no-repeat'
+          display={{ base: 'none', lg: 'block' }}
         />
-        <Box bgColor='#f9fcff' flex='0.5' h='100vh'>
+        <Box bgColor='#f9fcff' flex={{ base: '1', lg: '0.5' }} h='100vh'>
           <Box
             marginX='auto'
             w='360px'
