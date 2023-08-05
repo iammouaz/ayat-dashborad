@@ -11,11 +11,15 @@ import townIcon from 'assets/icons/dark-town.svg'
 import handIcon from 'assets/icons/hand.svg'
 import orderIcon from 'assets/icons/ic_my_order.svg'
 import ButtonNavLink from 'components/buttons/ButtonNavLink'
+import { useGetAccordionData } from 'hooks/useGetAccordionData'
 interface ServicesProps {}
 
 const Services: React.FunctionComponent<ServicesProps> = () => {
   const navigate = useNavigate()
   const outlet = useOutlet()
+
+  const { accourdionData, handleRemvoeItem, hundleRemoveItemFirstLevel } =
+    useGetAccordionData(AccordionItems)
 
   return (
     <React.Fragment>
@@ -57,8 +61,13 @@ const Services: React.FunctionComponent<ServicesProps> = () => {
               </Text>
             </Flex>
 
-            {AccordionItems.map((item, index) => (
-              <CustomizedAccordion key={`CustomizedAccordion-${index}`} item={item} />
+            {accourdionData.map((item, index) => (
+              <CustomizedAccordion
+                hundleRemoveItemFirstLevel={hundleRemoveItemFirstLevel}
+                handleRemvoeItem={handleRemvoeItem}
+                key={`CustomizedAccordion-${index}-${item.id}`}
+                item={item}
+              />
             ))}
           </Box>
           <ProductsContainer />
