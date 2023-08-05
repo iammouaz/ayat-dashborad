@@ -46,7 +46,7 @@ const CustomizedAccordion: FunctionComponent<CustomizedAccordionProps> = ({ item
               <Accordion p={0} bgColor='#f5f9ff' allowToggle>
                 {item.items.map((nestedItem, index) => (
                   <AccordionItem key={`nested-item-1-${index}`}>
-                    {({ isExpanded }) => (
+                    {() => (
                       <>
                         <AccordionButton borderLeft='8px solid #c3daff'>
                           <Flex w='full' justifyContent='space-between' alignItems='center'>
