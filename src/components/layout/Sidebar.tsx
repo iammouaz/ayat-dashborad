@@ -15,13 +15,13 @@ interface SidebarProps {}
 
 const Sidebar: FunctionComponent<SidebarProps> = () => {
   return (
-    <Box boxShadow="lg" bg='white' borderRadius='20px' py='6' px="8">
+    <Box minH="100vh" boxShadow='lg' bg='white' borderRadius='20px' py='6' px='8'>
       <Flex alignItems='center' gap='10px'>
         <Avatar w='2.5rem' h='2.5rem' src={avatarImg} />
         <Text fontWeight='bold'>User Name</Text>
         <Image src={chartsIcon} />
       </Flex>
-      <List display="flex" flexDirection="column" gap="20px" py='8'>
+      <List display='flex' flexDirection='column' gap='20px' py='8'>
         <LinkItem icon={homeIcon} link='' title='Home' />
         <LinkItem icon={myInstituionsIcon} link='/my-institutions' title='My Institutions' />
         <LinkItem icon={institutions} link='/institution' title='Institutions' />

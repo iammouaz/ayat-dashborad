@@ -12,7 +12,7 @@ const LinkItem: React.FunctionComponent<LinkItemProps> = ({ icon, link, title })
     <NavLink className='w-full flex justify-center relative' to={link}>
       {({ isActive }) => (
         <Flex
-        position="relative"
+          position='relative'
           _before={{
             content: '""',
             position: 'absolute',
@@ -21,7 +21,7 @@ const LinkItem: React.FunctionComponent<LinkItemProps> = ({ icon, link, title })
             width: isActive ? '50px' : '0px',
             height: '100%',
             bgColor: 'secondary',
-          }}      
+          }}
           py='1'
           px='3'
           w='100%'

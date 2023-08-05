@@ -3,6 +3,8 @@ import Login from 'pages/login/Login'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ProtectedRoute from './ProtectedRoute'
 import AlreadyLoggedinRedirect from './AlreadyLoggedIn'
+import Profile from 'pages/profile/Profile'
+import Services from 'pages/profile/containers/services/Services'
 
 interface AppRoutesProps {}
 
@@ -19,13 +21,18 @@ const AppRoutes: React.FunctionComponent<AppRoutesProps> = () => {
           }
         />
         <Route
-          path='/'
+          path='/home/profile'
           element={
             <ProtectedRoute>
-              <Dashboard />
+              <Profile />
             </ProtectedRoute>
           }
-        />
+        >
+          <Route path='services' element={<Services />} />
+          <Route path='user' element={<></>} />
+          <Route path='hospitals' element={<></>} />
+          <Route path='order' element={<></>} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

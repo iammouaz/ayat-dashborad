@@ -10,6 +10,8 @@ const theme = extendTheme({
   colors: {
     primary: '#3b86ff',
     secondary: '#f5f6fa',
+    lightGray: '#e7e9ef',
+    darkGray: '#a4afb7',
   },
   components: {
     Form: labelsVariant,

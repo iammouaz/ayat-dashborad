@@ -10,14 +10,14 @@ const Login: React.FunctionComponent<LoginProps> = () => {
       <Box w='full' display='flex'>
         <Box
           flex='0.5'
-          h='100vh'
+          minH='100vh'
           bgImage={hero}
           backgroundSize='cover'
           backgroundPosition='center'
           backgroundRepeat='no-repeat'
           display={{ base: 'none', lg: 'block' }}
         />
-        <Box bgColor='#f9fcff' flex={{ base: '1', lg: '0.5' }} h='100vh'>
+        <Box bgColor='#f9fcff' flex={{ base: '1', lg: '0.5' }} minH='100vh'>
           <Box
             marginX='auto'
             w='360px'
