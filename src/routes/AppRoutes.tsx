@@ -1,4 +1,3 @@
-import Dashboard from 'pages/dashboard/Dashboard'
 import Login from 'pages/login/Login'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ProtectedRoute from './ProtectedRoute'

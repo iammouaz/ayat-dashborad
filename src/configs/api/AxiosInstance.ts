@@ -1,5 +1,3 @@
-/* eslint-disable no-param-reassign */
-import { useToast } from '@chakra-ui/react'
 import axios from 'axios'
 import { AES } from 'crypto-js'
 import { useLocation, useNavigate } from 'react-router-dom'
@@ -8,7 +6,6 @@ import Cookies from 'js-cookie'
 const axiosClient = axios.create()
 
 export const useAxiosInstance = () => {
-  const toast = useToast()
   const navigate = useNavigate()
   const location = useLocation()
 

@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   base: '',
   build: {
-    outDir: '',
+    outDir: '/public',
   },
   server: { port: 3000 },
   resolve: {
